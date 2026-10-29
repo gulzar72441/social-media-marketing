@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #00235A;
+    --color-green: #0CBF83;
+    --color-bg-light: #F5F8FC;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  ::selection {
+    background-color: #0CBF83;
+    color: #ffffff;
+  }
+}
+
+/* Custom utility highlights */
+.bg-navy { background-color: #00235A; }
+.text-navy { color: #00235A; }
+.border-navy { border-color: #00235A; }
+
+.bg-accent-green { background-color: #0CBF83; }
+.text-accent-green { color: #0CBF83; }
+.border-accent-green { border-color: #0CBF83; }
+.hover\:bg-accent-green-hover:hover { background-color: #0aa571; }
+.hover\:text-accent-green:hover { color: #0CBF83; }
+
+.bg-brand-light { background-color: #F5F8FC; }
